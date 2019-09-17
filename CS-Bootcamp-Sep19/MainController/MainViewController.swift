@@ -9,13 +9,17 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    
+
     override func loadView() {
         view = MainView(frame: .zero)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigation()
+    }
+
+    func setupNavigation() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true

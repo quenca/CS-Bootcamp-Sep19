@@ -9,7 +9,7 @@
 import UIKit
 
 class CardCell: UICollectionViewCell {
-    
+
     let imageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
@@ -18,12 +18,12 @@ class CardCell: UICollectionViewCell {
         image.backgroundColor = .red
         return image
     }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .black
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -33,17 +33,15 @@ extension CardCell: ViewCodable {
     func buildHierarchy() {
         addSubview(imageView)
     }
-    
+
     func buildContraints() {
         imageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         imageView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         imageView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
-    
+
     func buildAdditionalConfiguration() {
-    
+
     }
-    
-    
 }
