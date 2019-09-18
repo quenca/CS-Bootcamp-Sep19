@@ -8,10 +8,20 @@
 
 import UIKit
 
+protocol MainViewControllerDelegate: AnyObject {
+    func showDetail()
+}
+
 class MainViewController: UIViewController {
 
+    weak var delegate: MainViewControllerDelegate?
+
+    lazy var mainView = MainView(frame: .zero)
+
     override func loadView() {
-        view = MainView(frame: .zero)
+        mainView.delegate = self
+        self.view = mainView
+
     }
 
     override func viewDidLoad() {
@@ -19,10 +29,20 @@ class MainViewController: UIViewController {
         setupNavigation()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
     func setupNavigation() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
+    }
+}
+
+extension MainViewController: MainViewDelegate {
+    func didButtonDetail() {
+        delegate?.showDetail()
     }
 }

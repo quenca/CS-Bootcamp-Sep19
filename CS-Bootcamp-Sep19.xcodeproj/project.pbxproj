@@ -15,6 +15,7 @@
 		578CDA2B2330303A00F51C3F /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CDA2A2330303A00F51C3F /* CardCell.swift */; };
 		578CDA2D23307C4000F51C3F /* ContentLayoutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CDA2C23307C4000F51C3F /* ContentLayoutData.swift */; };
 		578CDA3123312E6200F51C3F /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CDA3023312E6200F51C3F /* DetailController.swift */; };
+		578CDA3323312FB300F51C3F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CDA3223312FB300F51C3F /* DetailView.swift */; };
 		59DF690F2330037800B1C7BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DF690E2330037800B1C7BD /* AppDelegate.swift */; };
 		59DF69112330037800B1C7BD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DF69102330037800B1C7BD /* MainViewController.swift */; };
 		59DF69162330037900B1C7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59DF69152330037900B1C7BD /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		578CDA2A2330303A00F51C3F /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		578CDA2C23307C4000F51C3F /* ContentLayoutData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLayoutData.swift; sourceTree = "<group>"; };
 		578CDA3023312E6200F51C3F /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		578CDA3223312FB300F51C3F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		59DF690B2330037800B1C7BD /* CS-Bootcamp-Sep19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS-Bootcamp-Sep19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59DF690E2330037800B1C7BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59DF69102330037800B1C7BD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -98,8 +100,18 @@
 			isa = PBXGroup;
 			children = (
 				578CDA3023312E6200F51C3F /* DetailController.swift */,
+				578CDA3223312FB300F51C3F /* DetailView.swift */,
 			);
 			path = DetailController;
+			sourceTree = "<group>";
+		};
+		578CDA34233148DC00F51C3F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				578CDA21233018BA00F51C3F /* Coordinator.swift */,
+				578CDA232330191300F51C3F /* ViewCodable.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		59DF69022330037800B1C7BD = {
@@ -125,6 +137,7 @@
 		59DF690D2330037800B1C7BD /* CS-Bootcamp-Sep19 */ = {
 			isa = PBXGroup;
 			children = (
+				578CDA34233148DC00F51C3F /* Protocol */,
 				578CDA2F23312E4600F51C3F /* DetailController */,
 				578CDA2E23311EC800F51C3F /* MainController */,
 				578CDA27233027BB00F51C3F /* Coordinator */,
@@ -132,8 +145,6 @@
 				578CDA2C23307C4000F51C3F /* ContentLayoutData.swift */,
 				59DF69152330037900B1C7BD /* Assets.xcassets */,
 				59DF691A2330037900B1C7BD /* Info.plist */,
-				578CDA21233018BA00F51C3F /* Coordinator.swift */,
-				578CDA232330191300F51C3F /* ViewCodable.swift */,
 			);
 			path = "CS-Bootcamp-Sep19";
 			sourceTree = "<group>";
@@ -372,6 +383,7 @@
 				578CDA2B2330303A00F51C3F /* CardCell.swift in Sources */,
 				59DF69112330037800B1C7BD /* MainViewController.swift in Sources */,
 				578CDA29233027CF00F51C3F /* MainCoordinator.swift in Sources */,
+				578CDA3323312FB300F51C3F /* DetailView.swift in Sources */,
 				578CDA242330191300F51C3F /* ViewCodable.swift in Sources */,
 				59DF690F2330037800B1C7BD /* AppDelegate.swift in Sources */,
 				578CDA2D23307C4000F51C3F /* ContentLayoutData.swift in Sources */,

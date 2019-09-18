@@ -30,7 +30,23 @@ class MainCoordinator: Coordinator {
 
     func start() {
         let controller = MainViewController()
+        controller.delegate = self
         navigationController.pushViewController(controller, animated: true)
         self.window.makeKeyAndVisible()
+    }
+}
+
+extension MainCoordinator: MainViewControllerDelegate {
+    func showDetail() {
+        let controller = DetailController()
+        controller.delegate = self
+        controller.backViewDelegate = self
+        navigationController.pushViewController(controller, animated: true)
+    }
+}
+
+extension MainCoordinator: DismissControllerDelegate {
+    func back() {
+         navigationController.popViewController(animated: true)
     }
 }

@@ -15,6 +15,7 @@ class CardCell: UICollectionViewCell {
         image.contentMode = .scaleAspectFill
         image.layer.cornerRadius = 16
         image.layer.masksToBounds = true
+        image.translatesAutoresizingMaskIntoConstraints = false
         image.backgroundColor = .red
         return image
     }()
@@ -31,17 +32,16 @@ class CardCell: UICollectionViewCell {
 
 extension CardCell: ViewCodable {
     func buildHierarchy() {
-        addSubview(imageView)
+        contentView.addSubview(imageView)
     }
 
     func buildContraints() {
-        imageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        imageView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
-        imageView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
     }
 
     func buildAdditionalConfiguration() {
-
     }
 }
