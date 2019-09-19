@@ -7,3 +7,9 @@
 //
 
 import XCTest
+
+class MainViewDataSource: XCTestCase {
+    
+    var collectionView: UICollectionView!
+}
+

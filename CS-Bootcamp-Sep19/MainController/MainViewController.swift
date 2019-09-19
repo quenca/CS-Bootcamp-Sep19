@@ -16,12 +16,10 @@ class MainViewController: UIViewController {
 
     weak var delegate: MainViewControllerDelegate?
 
-    lazy var mainView = MainView(frame: .zero)
-
     override func loadView() {
+        let mainView = MainView(frame: .zero)
         mainView.delegate = self
         self.view = mainView
-
     }
 
     override func viewDidLoad() {

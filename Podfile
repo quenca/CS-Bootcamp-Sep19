@@ -3,17 +3,15 @@ platform :ios, '12.0'
 target 'CS-Bootcamp-Sep19' do
   use_frameworks!
 
- pod 'SkeletonView'
+  pod "SnapKit"
  
-
 target 'CS-Bootcamp-Sep19-Tests' do
-  use_frameworks!
+  inherit! :search_paths
 
-  pod 'Quick'
-  pod 'Nimble'
-  pod 'Nimble-Snapshots'
-  pod 'KIF', :configurations => ['Debug']
+    pod "Quick"
+    pod "Nimble"
+    pod 'Nimble-Snapshots'
+    pod 'KIF', :configurations => ['Debug']
 
-end 
-
+  end 
 end

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		14F6E100BE74EB7490F01DF9 /* Pods_CS_Bootcamp_Sep19.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC9E7C0D1ECA2CCE7825C68 /* Pods_CS_Bootcamp_Sep19.framework */; };
+		5701B2722332B0D800BCA0A9 /* MainViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701B2712332B0D800BCA0A9 /* MainViewControllerSpec.swift */; };
+		5701B2742332B16000BCA0A9 /* QuickSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701B2732332B16000BCA0A9 /* QuickSpec.swift */; };
+		5701B2762332CAC600BCA0A9 /* MainViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701B2752332CAC600BCA0A9 /* MainViewSpec.swift */; };
+		5701B2782332D65000BCA0A9 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701B2772332D65000BCA0A9 /* SectionHeader.swift */; };
+		5701B27A2333C28B00BCA0A9 /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5701B2792333C28B00BCA0A9 /* MainDataSource.swift */; };
 		578CDA22233018BA00F51C3F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CDA21233018BA00F51C3F /* Coordinator.swift */; };
 		578CDA242330191300F51C3F /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CDA232330191300F51C3F /* ViewCodable.swift */; };
 		578CDA262330242500F51C3F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CDA252330242500F51C3F /* MainView.swift */; };
@@ -20,7 +25,7 @@
 		59DF69112330037800B1C7BD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DF69102330037800B1C7BD /* MainViewController.swift */; };
 		59DF69162330037900B1C7BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59DF69152330037900B1C7BD /* Assets.xcassets */; };
 		59DF6927233008D000B1C7BD /* CS_Bootcamp_Sep19_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DF6926233008D000B1C7BD /* CS_Bootcamp_Sep19_Tests.swift */; };
-		CE9F35E1DE058C49CB3BBCE2 /* Pods_CS_Bootcamp_Sep19_CS_Bootcamp_Sep19_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131F6ADB3BC88806F85E4C3D /* Pods_CS_Bootcamp_Sep19_CS_Bootcamp_Sep19_Tests.framework */; };
+		7EC95AE4722BCB6C070E52AE /* Pods_CS_Bootcamp_Sep19_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B404828C653B70EE7A7E8C /* Pods_CS_Bootcamp_Sep19_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		131F6ADB3BC88806F85E4C3D /* Pods_CS_Bootcamp_Sep19_CS_Bootcamp_Sep19_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Bootcamp_Sep19_CS_Bootcamp_Sep19_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB5DA8CEF3B366A09260FD3 /* Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests.debug.xcconfig"; path = "Target Support Files/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		382585B3A69B84D432D1ADDE /* Pods-CS-Bootcamp-Sep19.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Bootcamp-Sep19.release.xcconfig"; path = "Target Support Files/Pods-CS-Bootcamp-Sep19/Pods-CS-Bootcamp-Sep19.release.xcconfig"; sourceTree = "<group>"; };
 		3D1ACBD9C8108DBC0D57E9D7 /* Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests.release.xcconfig"; path = "Target Support Files/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3DC9E7C0D1ECA2CCE7825C68 /* Pods_CS_Bootcamp_Sep19.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Bootcamp_Sep19.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5701B2712332B0D800BCA0A9 /* MainViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerSpec.swift; sourceTree = "<group>"; };
+		5701B2732332B16000BCA0A9 /* QuickSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSpec.swift; sourceTree = "<group>"; };
+		5701B2752332CAC600BCA0A9 /* MainViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewSpec.swift; sourceTree = "<group>"; };
+		5701B2772332D65000BCA0A9 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		5701B2792333C28B00BCA0A9 /* MainDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
 		578CDA21233018BA00F51C3F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		578CDA232330191300F51C3F /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		578CDA252330242500F51C3F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -55,7 +64,10 @@
 		59DF6924233008D000B1C7BD /* CS-Bootcamp-Sep19-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CS-Bootcamp-Sep19-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59DF6926233008D000B1C7BD /* CS_Bootcamp_Sep19_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS_Bootcamp_Sep19_Tests.swift; sourceTree = "<group>"; };
 		59DF6928233008D000B1C7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79B404828C653B70EE7A7E8C /* Pods_CS_Bootcamp_Sep19_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_Bootcamp_Sep19_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		855C95C9510C411559D48198 /* Pods-CS-Bootcamp-Sep19.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Bootcamp-Sep19.debug.xcconfig"; path = "Target Support Files/Pods-CS-Bootcamp-Sep19/Pods-CS-Bootcamp-Sep19.debug.xcconfig"; sourceTree = "<group>"; };
+		A3A0243DA1E9D2933B6F903C /* Pods-CS-Bootcamp-Sep19-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Bootcamp-Sep19-Tests.release.xcconfig"; path = "Target Support Files/Pods-CS-Bootcamp-Sep19-Tests/Pods-CS-Bootcamp-Sep19-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C896133F6EBD85A77A2E29CF /* Pods-CS-Bootcamp-Sep19-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-Bootcamp-Sep19-Tests.debug.xcconfig"; path = "Target Support Files/Pods-CS-Bootcamp-Sep19-Tests/Pods-CS-Bootcamp-Sep19-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +83,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9F35E1DE058C49CB3BBCE2 /* Pods_CS_Bootcamp_Sep19_CS_Bootcamp_Sep19_Tests.framework in Frameworks */,
+				7EC95AE4722BCB6C070E52AE /* Pods_CS_Bootcamp_Sep19_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5701B2702332B09900BCA0A9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5701B2712332B0D800BCA0A9 /* MainViewControllerSpec.swift */,
+				5701B2752332CAC600BCA0A9 /* MainViewSpec.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		578CDA27233027BB00F51C3F /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +112,9 @@
 			children = (
 				59DF69102330037800B1C7BD /* MainViewController.swift */,
 				578CDA252330242500F51C3F /* MainView.swift */,
+				5701B2772332D65000BCA0A9 /* SectionHeader.swift */,
 				578CDA2A2330303A00F51C3F /* CardCell.swift */,
+				5701B2792333C28B00BCA0A9 /* MainDataSource.swift */,
 			);
 			path = MainController;
 			sourceTree = "<group>";
@@ -152,8 +175,10 @@
 		59DF6925233008D000B1C7BD /* CS-Bootcamp-Sep19-Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5701B2702332B09900BCA0A9 /* Controllers */,
 				59DF6926233008D000B1C7BD /* CS_Bootcamp_Sep19_Tests.swift */,
 				59DF6928233008D000B1C7BD /* Info.plist */,
+				5701B2732332B16000BCA0A9 /* QuickSpec.swift */,
 			);
 			path = "CS-Bootcamp-Sep19-Tests";
 			sourceTree = "<group>";
@@ -162,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				3DC9E7C0D1ECA2CCE7825C68 /* Pods_CS_Bootcamp_Sep19.framework */,
-				131F6ADB3BC88806F85E4C3D /* Pods_CS_Bootcamp_Sep19_CS_Bootcamp_Sep19_Tests.framework */,
+				79B404828C653B70EE7A7E8C /* Pods_CS_Bootcamp_Sep19_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,6 +199,8 @@
 				382585B3A69B84D432D1ADDE /* Pods-CS-Bootcamp-Sep19.release.xcconfig */,
 				1BB5DA8CEF3B366A09260FD3 /* Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests.debug.xcconfig */,
 				3D1ACBD9C8108DBC0D57E9D7 /* Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests.release.xcconfig */,
+				C896133F6EBD85A77A2E29CF /* Pods-CS-Bootcamp-Sep19-Tests.debug.xcconfig */,
+				A3A0243DA1E9D2933B6F903C /* Pods-CS-Bootcamp-Sep19-Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -349,7 +376,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CS-Bootcamp-Sep19-Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -362,15 +389,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CS-Bootcamp-Sep19-Tests/Pods-CS-Bootcamp-Sep19-Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CS-Bootcamp-Sep19-Tests/Pods-CS-Bootcamp-Sep19-Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests/Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CS-Bootcamp-Sep19-Tests/Pods-CS-Bootcamp-Sep19-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -388,8 +415,10 @@
 				59DF690F2330037800B1C7BD /* AppDelegate.swift in Sources */,
 				578CDA2D23307C4000F51C3F /* ContentLayoutData.swift in Sources */,
 				578CDA262330242500F51C3F /* MainView.swift in Sources */,
+				5701B2782332D65000BCA0A9 /* SectionHeader.swift in Sources */,
 				578CDA3123312E6200F51C3F /* DetailController.swift in Sources */,
 				578CDA22233018BA00F51C3F /* Coordinator.swift in Sources */,
+				5701B27A2333C28B00BCA0A9 /* MainDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +426,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5701B2762332CAC600BCA0A9 /* MainViewSpec.swift in Sources */,
+				5701B2722332B0D800BCA0A9 /* MainViewControllerSpec.swift in Sources */,
 				59DF6927233008D000B1C7BD /* CS_Bootcamp_Sep19_Tests.swift in Sources */,
+				5701B2742332B16000BCA0A9 /* QuickSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +600,7 @@
 		};
 		59DF692C233008D000B1C7BD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BB5DA8CEF3B366A09260FD3 /* Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests.debug.xcconfig */;
+			baseConfigurationReference = C896133F6EBD85A77A2E29CF /* Pods-CS-Bootcamp-Sep19-Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -588,7 +620,7 @@
 		};
 		59DF692D233008D000B1C7BD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D1ACBD9C8108DBC0D57E9D7 /* Pods-CS-Bootcamp-Sep19-CS-Bootcamp-Sep19-Tests.release.xcconfig */;
+			baseConfigurationReference = A3A0243DA1E9D2933B6F903C /* Pods-CS-Bootcamp-Sep19-Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

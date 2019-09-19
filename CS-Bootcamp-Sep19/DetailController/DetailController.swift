@@ -8,15 +8,15 @@
 
 import UIKit
 
-protocol DismissControllerDelegate: AnyObject {
+protocol DismissControllerDelegate: MainViewControllerDelegate {
     func back()
 }
 
 class DetailController: UIViewController {
 
-   weak var delegate: MainViewControllerDelegate?
+   weak var delegate: DismissControllerDelegate?
 
-   weak var backViewDelegate: DismissControllerDelegate?
+  // weak var backViewDelegate: DismissControllerDelegate?
 
    lazy var detailView = DetailView(frame: .zero)
 
@@ -30,19 +30,19 @@ class DetailController: UIViewController {
         setupNavigation()
     }
 
+   lazy var backButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("X", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
     func setupNavigation() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
-
-        let backButton: UIButton = {
-            let button = UIButton()
-            button.setTitle("X", for: .normal)
-            button.setTitleColor(.blue, for: .normal)
-            button.translatesAutoresizingMaskIntoConstraints = false
-            return button
-        }()
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
 
@@ -51,7 +51,7 @@ class DetailController: UIViewController {
 
     @objc
     func back() {
-        backViewDelegate?.back()
+        delegate?.back()
     }
 }
 

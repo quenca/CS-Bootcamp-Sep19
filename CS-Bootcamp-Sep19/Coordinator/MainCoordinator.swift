@@ -40,7 +40,7 @@ extension MainCoordinator: MainViewControllerDelegate {
     func showDetail() {
         let controller = DetailController()
         controller.delegate = self
-        controller.backViewDelegate = self
+        //controller.delegate = self
         navigationController.pushViewController(controller, animated: true)
     }
 }
